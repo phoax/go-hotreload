@@ -4,3 +4,5 @@ github.com/phoax/go-hotreload/mypackage v0.0.0-20210220100720-af2e648ab3b9 h1:XY
 github.com/phoax/go-hotreload/mypackage v0.0.0-20210220100720-af2e648ab3b9/go.mod h1:WUZ1nB7qY3RCTt+2EE2O+oKAInsDMc7iVVIubdL7t00=
 github.com/phoax/go-hotreload/mypackage v0.0.0-20210220131425-f1cadc610fe5 h1:WPhQStXsJW+xip7Lt4GN8gmzTu5VazUclxmfsxuql+c=
 github.com/phoax/go-hotreload/mypackage v0.0.0-20210220131425-f1cadc610fe5/go.mod h1:WUZ1nB7qY3RCTt+2EE2O+oKAInsDMc7iVVIubdL7t00=
+github.com/phoax/go-hotreload/mypackage v0.0.0-20210220142406-c73f1bba5004 h1:EL8G2B7pwGRr+qniuu8GmJTid3unegoQ1QO8y37Ozgo=
+github.com/phoax/go-hotreload/mypackage v0.0.0-20210220142406-c73f1bba5004/go.mod h1:WUZ1nB7qY3RCTt+2EE2O+oKAInsDMc7iVVIubdL7t00=
