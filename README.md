@@ -14,7 +14,7 @@ This app allows to:
 
 ## How to use
 
-## Start
+### Start
 
 Get this repository:
 
@@ -42,9 +42,9 @@ The terminal should display:
 Call Package: Hello World from Mypackage
 ```
 
-## Test
+### Test
 
-### Update mypackage
+#### Update mypackage
 
 Update `mypackage/mytest/mytest.go ` by changing response message.
 
@@ -56,7 +56,7 @@ replace `message := ...` by
 message := "Hello World from Mypackage updated"
 ```
 
-### Update myapp
+#### Update myapp
 
 Update `myapp/main.go` by changing response message.
 
