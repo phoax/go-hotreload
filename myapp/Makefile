@@ -2,6 +2,8 @@ SERVICE := go-hotreload
 bold := $(shell tput bold)
 sgr0 := $(shell tput sgr0)
 
+# export GO_MOD=go.mod
+
 .PHONY: help
 
 help:
@@ -20,8 +22,16 @@ help:
 		  Force build images and start service for development\n\n\
 	"
 	
+
+
 dev:
-	docker-compose up
+	GO_MOD=go.mod docker-compose up
 
 dev-build:
-	docker-compose up --build
+	GO_MOD=go.mod docker-compose up --build
+
+dev-local:
+	GO_MOD=go.local.mod docker-compose up
+
+dev-local-build:
+	GO_MOD=go.local.mod docker-compose up --build

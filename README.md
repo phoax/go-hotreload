@@ -14,13 +14,7 @@ This app allows to:
 
 ## How to use
 
-## Start
-
-Get this repository:
-
-```
-git clone git@github.com:phoax/go-hotreload.git
-```
+### Start with released package
 
 Build images and start app:
 
@@ -42,9 +36,31 @@ The terminal should display:
 Call Package: Hello World from Mypackage
 ```
 
-## Test
+### Start with local package
 
-### Update mypackage
+Build images and start app:
+
+```
+cd myapp/
+make dev-local
+```
+
+Or force build images and start app:
+
+```
+cd myapp/
+make dev-local-build
+```
+
+The terminal should display:
+
+```
+Call Package: Hello World from Mypackage
+```
+
+### Test
+
+#### Update mypackage
 
 Update `mypackage/mytest/mytest.go ` by changing response message.
 
@@ -56,7 +72,7 @@ replace `message := ...` by
 message := "Hello World from Mypackage updated"
 ```
 
-### Update myapp
+#### Update myapp
 
 Update `myapp/main.go` by changing response message.
 
@@ -68,7 +84,15 @@ replace `message := ...` by
 message := "Call updated Package:"
 ```
 
-When `myapp/main.go` is saved, the app should rebuild, and the terminal should display:
+When `myapp/main.go` is saved, the app should rebuild.
+
+If the app is started with `make dev` or `make dev-build`, the package is not updated, the terminal should display:
+
+```
+Call updated Package: Hello World from Mypackage
+```
+
+If the app is started with `make dev-local` or `make dev-local-build`, the package is dynamically updated, the terminal should display:
 
 ```
 Call updated Package: Hello World from Mypackage updated
