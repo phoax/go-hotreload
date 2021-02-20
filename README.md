@@ -4,13 +4,13 @@ Simple Go app executed in a container with hot reload and dynamic import of a lo
 
 ## Description
 
-It is a good practice the run Go application in a Docker container, and for developpment, hot reload and easy use of local packages is important.
+It is a good practice the run Go application in a Docker container, and use hot reload and local packages for developpment is important.
 
-This demo allows to:
+This app allows to:
 
 - Start a Go application in a Docker container.
-- Use hot reload to restart the application each time a file is saved in Myapp.
-- Import an dynamicly updatable local package from Mypackage.
+- Use hot reload to restart the application each time a file is saved in `myapp`.
+- Import a dynamicly updatable local package from `mypackage`.
 
 ## How to use
 
@@ -44,24 +44,31 @@ Call Package: Hello World from Mypackage
 
 ## Test
 
+### Update mypackage
+
 Update `mypackage/mytest/mytest.go ` by changing response messages.
-Ex:
+
+Example:
+
 replace `message := ...` by
 
 ```
 message := "Hello World from Mypackage updated"
 ```
 
+### Update myapp
+
 Update `myapp/main.go` by changing response messages.
 
-Ex:
+Example:
+
 replace `message := ...` by
 
 ```
 message := "Call updated Package:"
 ```
 
-When `myapp/main.go` saved, the app should be rebuild, and the terminal should display:
+When `myapp/main.go` is saved, the app should rebuild, and the terminal should display:
 
 ```
 Call updated Package: Hello World from Mypackage updated
