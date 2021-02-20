@@ -46,7 +46,7 @@ Call Package: Hello World from Mypackage
 
 ### Update mypackage
 
-Update `mypackage/mytest/mytest.go ` by changing response messages.
+Update `mypackage/mytest/mytest.go ` by changing response message.
 
 Example:
 
@@ -58,7 +58,7 @@ message := "Hello World from Mypackage updated"
 
 ### Update myapp
 
-Update `myapp/main.go` by changing response messages.
+Update `myapp/main.go` by changing response message.
 
 Example:
 
@@ -76,8 +76,6 @@ Call updated Package: Hello World from Mypackage updated
 
 ## How it works
 
-### Hot reload
-
 ### Dynamic local package
 
 Add a new local package only to `go.dev.mod`
@@ -94,3 +92,5 @@ Then in docker-compose, the `go.mod` will be overwritten with `../myapp/go.dev.m
       [...]
       - ../myapp/go.dev.mod:/go/src/myapp/go.mod
 ```
+
+### Hot reload
