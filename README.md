@@ -78,13 +78,17 @@ Call updated Package: Hello World from Mypackage updated
 
 ### Dynamic local package
 
-Add a new local package only to `go.dev.mod`
+To use a local package, specify the `./go.dev.mod` file in the `go mod edit -replace` command.
+
+Example:
 
 ```
 go mod edit -replace github.com/phoax/go-hotreload/mypackage=../mypackage ./go.dev.mod
 ```
 
-Then in docker-compose, the `go.mod` will be overwritten with `../myapp/go.dev.mod:/go/src/myapp/go.mod`:
+Then, when started the `go.mod` app will be overwritten by `go.dev.mod` thanks to `../myapp/go.dev.mod:/go/src/myapp/go.mod`
+
+docker-compose.yml:
 
 ```
 [...]
@@ -94,3 +98,15 @@ Then in docker-compose, the `go.mod` will be overwritten with `../myapp/go.dev.m
 ```
 
 ### Hot reload
+
+Hot reload is simply enabled by compiling and starting the app with `go get github.com/githubnemo/CompileDaemon` package.
+
+Dockerfile:
+
+```
+[...]
+
+RUN go get github.com/githubnemo/CompileDaemon
+
+ENTRYPOINT CompileDaemon --build="go build main.go" --command="./main"
+```
