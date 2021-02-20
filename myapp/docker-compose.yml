@@ -1,0 +1,11 @@
+version: "3"
+services:
+  myapp:
+    container_name: myapp
+    build:
+      dockerfile: ./myapp/Dockerfile
+      context: ../
+    volumes:
+      - ../myapp:/go/src/myapp/
+      - ../mypackage:/go/src/mypackage
+    restart: unless-stopped
