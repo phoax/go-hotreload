@@ -9,7 +9,6 @@ COPY . .
 WORKDIR /go/src/myapp/
 
 RUN go mod download -x
-RUN go mod edit -replace github.com/phoax/go-hotreload/mypackage=../mypackage
 
 RUN go get github.com/githubnemo/CompileDaemon
 

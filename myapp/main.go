@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Call Package:", mytest.GetMyTest())
+	message := "Call Package:"
+	fmt.Println(message, mytest.GetMyTest())
 }

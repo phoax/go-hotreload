@@ -1,1 +1,4 @@
 github.com/phoax/go-hotreload v0.0.0-20210220084604-65026581da08 h1:ESevZqtJ6yid7xTsJBwOsXizAiNlm/eUTsjOBgEO+Dw=
+github.com/phoax/go-hotreload v0.0.0-20210220100720-af2e648ab3b9 h1:0mvk9f4um8jkRrsUa/v/9bBCslR6rjfgrZIWyENZoxo=
+github.com/phoax/go-hotreload/mypackage v0.0.0-20210220100720-af2e648ab3b9 h1:XYWVaHBu0yM3Gtqb5gGlabuSXXjoZQjX0AecbZA5pVw=
+github.com/phoax/go-hotreload/mypackage v0.0.0-20210220100720-af2e648ab3b9/go.mod h1:WUZ1nB7qY3RCTt+2EE2O+oKAInsDMc7iVVIubdL7t00=
