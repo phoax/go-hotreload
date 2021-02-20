@@ -14,7 +14,7 @@ This app allows to:
 
 ## How to use
 
-### Start with released package
+### Start with the released package
 
 Build images and start app:
 
@@ -36,7 +36,7 @@ The terminal should display:
 Call Package: Hello World from Mypackage
 ```
 
-### Start with local package
+### Start with the local package
 
 Build images and start app:
 
