@@ -14,16 +14,20 @@ This app allows to:
 
 ## How to use
 
+The application can be executed with the released package or with the local package.
+
 ### Start with the released package
 
-Build images and start app:
+The application can be executed with the released package on GitHub to preserve compatibility with official packages.
+
+Build image and start app:
 
 ```
 cd myapp/
 make dev
 ```
 
-Or force build images and start app:
+Or force build image and start app:
 
 ```
 cd myapp/
@@ -38,14 +42,16 @@ Call Package: Hello World from Mypackage
 
 ### Start with the local package
 
-Build images and start app:
+The application can be executed with the local package to allow dynamic updates on the package.
+
+Build image and start app:
 
 ```
 cd myapp/
 make dev-local
 ```
 
-Or force build images and start app:
+Or force build image and start app:
 
 ```
 cd myapp/
