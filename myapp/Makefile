@@ -2,8 +2,6 @@ SERVICE := go-hotreload
 bold := $(shell tput bold)
 sgr0 := $(shell tput sgr0)
 
-# export GO_MOD=go.mod
-
 .PHONY: help
 
 help:
