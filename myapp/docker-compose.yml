@@ -3,10 +3,10 @@ services:
   myapp:
     container_name: myapp
     build:
-      dockerfile: ./myapp/Dockerfile
-      context: ../
+      dockerfile: Dockerfile
+      context: ./
     volumes:
-      - ../myapp:/go/src/myapp/
-      - ../myapp/${GO_MOD}:/go/src/myapp/go.mod
+      - ./:/go/src/app/
+      - ./${GO_MOD}:/go/src/app/go.mod
       - ../mypackage:/go/src/mypackage
     restart: unless-stopped

@@ -1,12 +1,8 @@
 FROM golang:latest
 
-RUN apt-get update && apt-get install make bash
-
-WORKDIR /go/src/
+WORKDIR /go/src/app/
 
 COPY . .
-
-WORKDIR /go/src/myapp/
 
 RUN go mod download -x
 
